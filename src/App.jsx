@@ -1,8 +1,9 @@
 import React from 'react';
+import Landing from './components/Landing';
 
 const App = () => (
   <div>
-    <h1>Welcome to Banka</h1>
+    <Landing />
   </div>
 );
 
