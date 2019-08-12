@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server --open --hot",
+    "start": "node index.js",
+    "dev": "webpack-dev-server --open --hot",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src --ext '.js?(x)'"
   },
@@ -21,6 +22,7 @@
   "homepage": "https://github.com/phembarl/Banka-React#readme",
   "dependencies": {
     "css-loader": "^3.1.0",
+    "express": "^4.17.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
