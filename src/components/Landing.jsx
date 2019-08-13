@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const landing = () => (
   <div id="indexWelcome">
@@ -34,7 +35,9 @@ const landing = () => (
             Your successful transactions are only a few clicks away!
     </p>
 
-    <a id="btn" href="home.html" className="visible">Bank With Us</a>
+    <Link to="/home" className="linky">
+      <a id="btn" href="home.html" className="visible">Bank With Us</a>
+    </Link>
 
     <div className="image-overlay" />
   </div>
