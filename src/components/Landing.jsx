@@ -1,7 +1,6 @@
 import React from 'react';
-// import './Landing.css'
 
-const landing = props => (
+const landing = () => (
   <div id="indexWelcome">
     <nav className="indexNavbar">
       <div>
@@ -21,6 +20,13 @@ const landing = props => (
     </nav>
 
     <h1 className="visible desk">Welcome To Banka</h1>
+    <h1 className="visible mob">
+      Welcome
+      <br />
+      To
+      <br />
+      Banka
+    </h1>
 
     <hr className="visible firsthr" />
 
