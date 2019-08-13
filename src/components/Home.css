@@ -9,10 +9,6 @@
     position: relative;
 }
 
-#linky {
-  color: #000;
-}
-
 .nav{
     color: #00ffff;
 }
@@ -52,10 +48,6 @@
 	border: 0;
     height: 1px;
     background: #000;
-}
-
-.linky {
-  text-decoration: none;
 }
 
 .lorem{
