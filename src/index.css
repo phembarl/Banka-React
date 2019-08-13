@@ -441,6 +441,14 @@ height: 35px;
   font-size: 18px;
 }
 
+.linky {
+  text-decoration: none;
+}
+
+.linky:visited {
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 1024px){
 .form-nav{
   background: #f2f2f2;

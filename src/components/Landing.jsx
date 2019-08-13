@@ -15,11 +15,11 @@ const landing = () => (
       </div>
 
       <div className="nav-items nav-right">
-        <Link to="/login">
+        <Link to="/login" className="linky">
           <div className="user visible nav-link">Login</div>
         </Link>
 
-        <Link to="/signup">
+        <Link to="/signup" className="linky">
           <div className="user visible nav-link">Sign Up</div>
         </Link>
       </div>
