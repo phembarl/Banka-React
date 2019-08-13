@@ -1,7 +1,7 @@
 import React from 'react';
-// import './Landing.css'
+import { Link } from 'react-router-dom';
 
-const landing = props => (
+const landing = () => (
   <div id="indexWelcome">
     <nav className="indexNavbar">
       <div>
@@ -21,6 +21,13 @@ const landing = props => (
     </nav>
 
     <h1 className="visible desk">Welcome To Banka</h1>
+    <h1 className="visible mob">
+      Welcome
+      <br />
+      To
+      <br />
+      Banka
+    </h1>
 
     <hr className="visible firsthr" />
 
@@ -28,7 +35,9 @@ const landing = props => (
             Your successful transactions are only a few clicks away!
     </p>
 
-    <a id="btn" href="home.html" className="visible">Bank With Us</a>
+    <Link to="/home" className="linky">
+      <a id="btn" href="home.html" className="visible">Bank With Us</a>
+    </Link>
 
     <div className="image-overlay" />
   </div>
