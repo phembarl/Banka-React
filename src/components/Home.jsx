@@ -16,8 +16,13 @@ const home = () => (
       </div>
 
       <div className="nav-items nav-right">
-        <a href="login.html" className="user visible nav-link">Login</a>
-        <a href="signup.html" className="user visible nav-link">Sign Up</a>
+        <Link to="/login">
+          <div className="user visible nav-link">Login</div>
+        </Link>
+
+        <Link to="/signup">
+          <div className="user visible nav-link">Sign Up</div>
+        </Link>
       </div>
     </nav>
 
