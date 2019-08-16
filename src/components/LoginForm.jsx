@@ -15,8 +15,8 @@ const loginForm = () => (
       </div>
 
       <div className="nav-items nav-right">
-        <a href="staffLogin.html" className="user form-users visible nav-link">Staff Login</a>
-        <a href="adminLogin.html" className="user form-users visible nav-link">Admin</a>
+        <a href="#" className="user form-users visible nav-link">Staff Login</a>
+        <a href="#" className="user form-users visible nav-link">Admin</a>
       </div>
     </nav>
 
