@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/phembarl/Banka-React#readme",
   "dependencies": {
+    "axios": "^0.19.0",
     "css-loader": "^3.1.0",
     "express": "^4.17.1",
     "react": "^16.8.6",

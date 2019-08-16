@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 const landing = () => (
   <div id="indexWelcome">
     <nav className="indexNavbar">
-      <div>
-        <a href="Landing.jsx" className="visible nav nav-link brand">Banka</a>
-      </div>
+      <Link to="/" class="linky">
+        <div href="Landing.jsx" className="visible nav nav-link brand">Banka</div>
+      </Link>
 
       <div className="visible nav-link tog-btn">
         <span />

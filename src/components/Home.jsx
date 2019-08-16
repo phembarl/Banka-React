@@ -16,11 +16,11 @@ const home = () => (
       </div>
 
       <div className="nav-items nav-right">
-        <Link to="/login">
+        <Link to="/login" className="linky">
           <div className="user visible nav-link">Login</div>
         </Link>
 
-        <Link to="/signup">
+        <Link to="/signup" className="linky">
           <div className="user visible nav-link">Sign Up</div>
         </Link>
       </div>
@@ -48,7 +48,7 @@ const home = () => (
               Soluta consequuntur assumenda, adcumque architecto
               laudantium eum neque voluptatibus corporis.
               Hic possimus reprehenderit similique error voluptatibus sit aspernatur!
-            <a href="signup.html" className="other"> Get started</a>
+            <a href="#" className="other"> Get started</a>
           </p>
         </div>
       </div>
