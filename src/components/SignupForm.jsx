@@ -15,8 +15,8 @@ const signupForm = () => (
       </div>
 
       <div className="nav-items nav-right">
-        <a href="staffLogin.html" className="user form-users visible nav-link">Staff Login</a>
-        <a href="adminLogin.html" className="user form-users visible nav-link">Admin</a>
+        <div className="user form-users visible nav-link">Staff Login</div>
+        <div className="user form-users visible nav-link">Admin</div>
       </div>
     </nav>
 
@@ -36,7 +36,9 @@ const signupForm = () => (
         <input id="confirmPassword" type="password" name="" placeholder="Confirm password" />
         <input type="Submit" name="" id="submit" />
 
-        <a href="login.html" className="other"> Already have an account? Sign in</a>
+        <Link to="/login" className="linky">
+          <div className="other"> Already have an account? Sign in</div>
+        </Link>
       </form>
     </div>
 
