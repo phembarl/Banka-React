@@ -19,8 +19,4 @@ describe('App', () => {
   it('renders a Switch component', () => {
     expect(component.find('Switch').length).toBe(1);
   });
-
-  it('renders a Route component', () => {
-    expect(component.find('Route').length).toBe(4);
-  });
 });

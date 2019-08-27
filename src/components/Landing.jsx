@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const landing = () => (
   <div id="indexWelcome">
     <nav className="indexNavbar">
-      <Link to="/" class="linky">
+      <Link to="/" className="linky">
         <div href="Landing.jsx" className="visible nav nav-link brand">Banka</div>
       </Link>
 
@@ -41,7 +41,7 @@ const landing = () => (
     </p>
 
     <Link to="/home" className="linky">
-      <a id="btn" href="home.html" className="visible">Bank With Us</a>
+      <div id="btn" href="home.html" className="visible">Bank With Us</div>
     </Link>
 
     <div className="image-overlay" />
