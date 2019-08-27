@@ -19,9 +19,22 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(css|scss)$/,
-        exclude: /node_modules/,
-        use: ['style-loader', 'css-loader'],
+        test: /\.s?css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+          'import-glob-loader',
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: ['./src/variables.scss', './src/mixins.scss'],
+              localsConvention: 'camelCase',
+              modules: true,
+              import: true,
+            },
+          },
+        ],
       },
       {
         test: /\.(png|jpe?g|gif)$/,
