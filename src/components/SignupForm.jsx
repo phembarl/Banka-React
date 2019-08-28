@@ -58,9 +58,9 @@ export class SignupForm extends Component {
     return (
       <div>
         <div id="welcome">
-          <nav className="navbar form-nav visible">
+          <nav className="navbar navbar-2 form-nav visible">
             <Link to="/" className="linky">
-              <div className="visible nav nav-link brand form-brand">Banka</div>
+              <div className="visible nav-2 nav-link brand form-brand">Banka</div>
             </Link>
 
             <div className="toggle-btn visible nav-link">
@@ -70,8 +70,8 @@ export class SignupForm extends Component {
             </div>
 
             <div className="nav-items nav-right">
-              <div className="user form-users visible nav-link">Staff Login</div>
-              <div className="user form-users visible nav-link">Admin</div>
+              <div className="user2 form-users visible nav-link">Staff Login</div>
+              <div className="user2 form-users visible nav-link">Admin</div>
             </div>
           </nav>
 
@@ -116,14 +116,14 @@ export class SignupForm extends Component {
 
 SignupForm.propTypes = {
   registerUser: PropTypes.func.isRequired,
-  errors: PropTypes.shape([]),
+  errors: PropTypes.arrayOf(PropTypes.string),
   history: PropTypes.shape({}).isRequired,
   loading: PropTypes.bool.isRequired,
   loadingSuccess: PropTypes.bool.isRequired,
 };
 
 SignupForm.defaultProps = {
-  errors: [],
+  errors: [''],
 };
 
 export const mapStateToProps = state => ({

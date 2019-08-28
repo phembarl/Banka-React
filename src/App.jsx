@@ -6,8 +6,12 @@ import Landing from './components/Landing';
 import Home from './components/Home';
 import SignupForm from './components/SignupForm';
 import LoginForm from './components/LoginForm';
-import Dashboard from './components/Dashboard';
+import Dashboard from './components/Dashboard/index';
+import TransactHistory from './components/History';
+import NewAccount from './components/NewAccount';
+import Transact from './components/Transact';
 import Guest from './hoc/Guest';
+import Private from './hoc/Private';
 
 const App = () => (
   <Provider store={store}>
@@ -16,8 +20,11 @@ const App = () => (
         <Route exact path="/" component={Landing} />
         <Route exact path="/home" component={Home} />
         <Guest exact path="/signup" component={SignupForm} />
-        <Guest exact path="/login" component={LoginForm} />
-        <Route exact path="/dashboard" component={Dashboard} />
+        <Guest path="/login" component={LoginForm} />
+        <Private path="/dashboard" component={Dashboard} />
+        <Private exact path="/transaction-history" component={TransactHistory} />
+        <Private exact path="/create-account" component={NewAccount} />
+        <Private exact path="/transact" component={Transact} />
       </Switch>
     </Router>
   </Provider>

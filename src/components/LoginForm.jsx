@@ -53,9 +53,9 @@ export class LoginForm extends Component {
     return (
       <div>
         <div id="welcome">
-          <nav className="navbar form-nav visible">
+          <nav className="navbar navbar-2 form-nav visible">
             <Link to="/" className="linky">
-              <div className="visible nav nav-link brand form-brand">Banka</div>
+              <div className="visible nav-2 nav-link brand form-brand">Banka</div>
             </Link>
 
             <div className="toggle-btn visible nav-link">
@@ -65,8 +65,8 @@ export class LoginForm extends Component {
             </div>
 
             <div className="nav-items nav-right">
-              <a href="#" className="user form-users visible nav-link">Staff Login</a>
-              <a href="#" className="user form-users visible nav-link">Admin</a>
+              <a href="#" className="user2 form-users visible nav-link">Staff Login</a>
+              <a href="#" className="user2 form-users visible nav-link">Admin</a>
             </div>
           </nav>
 
@@ -105,7 +105,7 @@ export class LoginForm extends Component {
 
 LoginForm.propTypes = {
   loginUser: PropTypes.func.isRequired,
-  errors: PropTypes.shape([]),
+  // errors: PropTypes.shape(['']),
   errorMessage: PropTypes.string,
   history: PropTypes.shape({}).isRequired,
   loading: PropTypes.bool.isRequired,
@@ -113,7 +113,7 @@ LoginForm.propTypes = {
 };
 
 LoginForm.defaultProps = {
-  errors: [],
+  // errors: [],
   errorMessage: '',
 };
 
