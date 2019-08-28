@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Route, Redirect } from 'react-router-dom';
 
-const token = sessionStorage.getItem('token');
+const token = localStorage.getItem('token');
 
 const GuestWrapper = ({
   component: Component,
@@ -15,9 +15,9 @@ const GuestWrapper = ({
   />
 );
 
-GuestWrapper.propTypes = {
-  component: PropTypes.shape({}).isRequired,
-};
+// GuestWrapper.propTypes = {
+//   component: PropTypes.shape({}).isRequired,
+// };
 
 
 export default GuestWrapper;

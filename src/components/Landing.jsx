@@ -5,7 +5,7 @@ const landing = () => (
   <div id="indexWelcome">
     <nav className="indexNavbar">
       <Link to="/" className="linky">
-        <div href="Landing.jsx" className="visible nav nav-link brand">Banka</div>
+        <div href="Landing.jsx" className="visible nav-2 nav-link brand">Banka</div>
       </Link>
 
       <div className="visible nav-link tog-btn">
@@ -16,11 +16,11 @@ const landing = () => (
 
       <div className="nav-items nav-right">
         <Link to="/login" className="linky">
-          <div className="user visible nav-link">Login</div>
+          <div className="user2 visible nav-link">Login</div>
         </Link>
 
         <Link to="/signup" className="linky">
-          <div className="user visible nav-link">Sign Up</div>
+          <div className="user2 visible nav-link">Sign Up</div>
         </Link>
       </div>
     </nav>

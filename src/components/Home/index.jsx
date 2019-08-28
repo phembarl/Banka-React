@@ -6,7 +6,7 @@ const home = () => (
   <div id="home">
     <nav className="homeNavbar">
       <Link to="/" className="linky">
-        <a href="index.html" className="visible nav nav-link brand linky">Banka</a>
+        <a href="index.html" className="visible nav-2 nav-link brand linky">Banka</a>
       </Link>
 
       <div className="visible nav-link tog-btn">
@@ -17,11 +17,11 @@ const home = () => (
 
       <div className="nav-items nav-right">
         <Link to="/login" className="linky">
-          <div className="user visible nav-link">Login</div>
+          <div className="user2 visible nav-link">Login</div>
         </Link>
 
         <Link to="/signup" className="linky">
-          <div className="user visible nav-link">Sign Up</div>
+          <div className="user2 visible nav-link">Sign Up</div>
         </Link>
       </div>
     </nav>
@@ -48,7 +48,9 @@ const home = () => (
               Soluta consequuntur assumenda, adcumque architecto
               laudantium eum neque voluptatibus corporis.
               Hic possimus reprehenderit similique error voluptatibus sit aspernatur!
-            <a href="#" className="other"> Get started</a>
+            <Link to="/signup" className="linky home-link">
+              <div className="other">{` ${'Get started'}`}</div>
+            </Link>
           </p>
         </div>
       </div>

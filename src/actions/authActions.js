@@ -32,19 +32,25 @@ export const loginUser = (userDetails, history) => (dispatch) => {
   return axios.post('/auth/signin', userDetails)
     .then((response) => {
       const user = response.data.data[0];
-      sessionStorage.setItem('token', user.token);
+      localStorage.setItem('token', user.token);
+      localStorage.setItem('userId', user.id);
+      localStorage.setItem('firstName', user.firstName);
+      const firstName = localStorage.getItem('firstName');
+      localStorage.setItem('lastName', user.lastName);
+      const lastName = localStorage.getItem('lastName');
+      localStorage.setItem('email', user.email);
+      localStorage.setItem('avatar', `https://ui-avatars.com/api/?name=${firstName}+${lastName}&size=200&background=99e6e6&color=000`);
 
       const userInfo = {
+        token: localStorage.getItem('token'),
         userId: user.id,
         firstName: user.firstName,
         lastName: user.lastName,
         email: user.email,
-        avatar: user.avatar,
+        avatar: `https://ui-avatars.com/api/?name=${firstName}+${lastName}&size=200&background=99e6e6&color=000`,
       };
       history.push('/dashboard');
-
       dispatch(setCurrentUser(userInfo));
-
       dispatch(success());
     })
     .catch(error => dispatch({
