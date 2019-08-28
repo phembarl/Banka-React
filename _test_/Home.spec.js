@@ -15,7 +15,7 @@ describe('About', () => {
   });
 
   it('renders a div tag', () => {
-    expect(component.find('div').length).toBe(10);
+    expect(component.find('div').length).toBe(11);
   });
 
   it('renders a nav tag', () => {
@@ -23,7 +23,7 @@ describe('About', () => {
   });
 
   it('renders an a tag', () => {
-    expect(component.find('a').length).toBe(2);
+    expect(component.find('a').length).toBe(1);
   });
 
   it('renders an h3 tag', () => {
@@ -31,7 +31,7 @@ describe('About', () => {
   });
 
   it('renders three Link tags', () => {
-    expect(component.find('Link').length).toBe(3);
+    expect(component.find('Link').length).toBe(4);
   });
 
   it('renders two h2 tags', () => {
