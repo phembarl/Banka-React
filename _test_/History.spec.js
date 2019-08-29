@@ -1,18 +1,15 @@
 import React from 'react';
 import expect from 'expect';
 import { shallow } from 'enzyme';
-import Guest from '../src/hoc/Guest';
+import { TransactHistory } from '../src/components/History';
+import props from '../src/utils/testProps';
 
 describe('About', () => {
   let component;
 
-
-  const props = {
-    token: 'fmkkjnklkjsndkflkjf',
-  };
-
   beforeEach(() => {
-    component = shallow(<Guest {...props} />);
+    component = shallow(<TransactHistory {...props} />);
+    component.setProps({ accountLoading: true, historyLoading: true });
   });
 
   it('renders successfully', () => {
