@@ -7,7 +7,7 @@ import Loader from '../Loader';
 import decodeToken from '../../utils/decoded';
 
 
-class Transact extends Component {
+export class Transact extends Component {
   state = {
     accountNumber: '',
     transactionType: 'credit',

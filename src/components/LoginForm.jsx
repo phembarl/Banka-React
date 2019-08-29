@@ -58,15 +58,16 @@ export class LoginForm extends Component {
               <div className="visible nav-2 nav-link brand form-brand">Banka</div>
             </Link>
 
-            <div className="toggle-btn visible nav-link">
+            <div className="toggle-btn toggle-btn-2 visible nav-link">
               <span className="tog" />
               <span className="tog" />
               <span className="tog" />
             </div>
 
             <div className="nav-items nav-right">
-              <a href="#" className="user2 form-users visible nav-link">Staff Login</a>
-              <a href="#" className="user2 form-users visible nav-link">Admin</a>
+              <Link to="/signup" className="linky">
+                <div className="user2 form-users visible nav-link">Sign Up</div>
+              </Link>
             </div>
           </nav>
 

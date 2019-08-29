@@ -9,7 +9,7 @@ import './Dashboard2.css';
 import '../FeedbackModal/FeedbackModal.css';
 import '../History/History.css';
 
-class Dashboard extends Component {
+export class Dashboard extends Component {
   state = {};
 
   componentDidMount() {
