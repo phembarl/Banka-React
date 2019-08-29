@@ -83,7 +83,7 @@ export class NewAccount extends Component {
 
               <div className="options">
                 <div className="avi">
-                  <img className="pishicon" src={sessionStorage.getItem('avatar')} alt="" />
+                  <img className="pishicon" src={localStorage.getItem('avatar')} alt="" />
                 </div>
                 <p className="arrow"><i className="caret" /></p>
               </div>
