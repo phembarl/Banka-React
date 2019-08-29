@@ -1,7 +1,7 @@
 import React from 'react';
 import expect from 'expect';
 import { shallow } from 'enzyme';
-import Guest from '../src/hoc/Guest';
+import Private from '../src/hoc/Private';
 
 describe('About', () => {
   let component;
@@ -12,7 +12,7 @@ describe('About', () => {
   };
 
   beforeEach(() => {
-    component = shallow(<Guest {...props} />);
+    component = shallow(<Private {...props} />);
   });
 
   it('renders successfully', () => {

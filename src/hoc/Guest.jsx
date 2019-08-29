@@ -15,9 +15,5 @@ const GuestWrapper = ({
   />
 );
 
-// GuestWrapper.propTypes = {
-//   component: PropTypes.shape({}).isRequired,
-// };
-
 
 export default GuestWrapper;

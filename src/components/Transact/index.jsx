@@ -59,6 +59,7 @@ export class Transact extends Component {
       return <Redirect to="/dashboard" />;
     }
 
+    /* istanbul ignore next */
     return (
       <div>
         <div id="admin">
@@ -152,6 +153,7 @@ export class Transact extends Component {
   }
 }
 
+/* istanbul ignore next */
 export const mapStateToProps = state => ({
   auth: state.auth,
   errors: state.errors.errors,

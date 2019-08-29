@@ -1,18 +1,13 @@
 import React from 'react';
 import expect from 'expect';
 import { shallow } from 'enzyme';
-import Guest from '../src/hoc/Guest';
+import NotFound from '../src/components/NotFound';
 
 describe('About', () => {
   let component;
 
-
-  const props = {
-    token: 'fmkkjnklkjsndkflkjf',
-  };
-
   beforeEach(() => {
-    component = shallow(<Guest {...props} />);
+    component = shallow(<NotFound />);
   });
 
   it('renders successfully', () => {
