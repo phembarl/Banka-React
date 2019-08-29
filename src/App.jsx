@@ -10,6 +10,7 @@ import Dashboard from './components/Dashboard/index';
 import TransactHistory from './components/History';
 import NewAccount from './components/NewAccount';
 import Transact from './components/Transact';
+import NotFound from './components/NotFound';
 import Guest from './hoc/Guest';
 import Private from './hoc/Private';
 
@@ -20,11 +21,12 @@ const App = () => (
         <Route exact path="/" component={Landing} />
         <Route exact path="/home" component={Home} />
         <Guest exact path="/signup" component={SignupForm} />
-        <Guest path="/login" component={LoginForm} />
-        <Private path="/dashboard" component={Dashboard} />
+        <Guest exact path="/login" component={LoginForm} />
+        <Private exact path="/dashboard" component={Dashboard} />
         <Private exact path="/transaction-history" component={TransactHistory} />
         <Private exact path="/create-account" component={NewAccount} />
         <Private exact path="/transact" component={Transact} />
+        <Route component={NotFound} />
       </Switch>
     </Router>
   </Provider>

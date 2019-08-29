@@ -115,7 +115,6 @@ export const transact = (accountNumber, transactionType, transactionData) => (di
   })
     .then((response) => {
       const transactionDetails = response.data.data[0];
-      console.log(response);
 
       dispatch(transaction(transactionDetails));
 

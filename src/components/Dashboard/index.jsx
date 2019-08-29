@@ -17,6 +17,7 @@ export class Dashboard extends Component {
     this.props.userAccounts(email);
   }
 
+  /* istanbul ignore next */
   componentDidUpdate(prevProps) {
     if (prevProps.userAccount) {
       if (prevProps.userAccount.accountnumber !== this.props.userAccount.accountnumber) {
@@ -39,9 +40,9 @@ export class Dashboard extends Component {
     return (
       <div id="dashboard">
         <nav className="visible navbar nav-in">
-          <div>
-            <a href="dashboard.html" className="visible nav nav-link">Banka</a>
-          </div>
+          <Link to="/dashboard" className="linky">
+            <div className="visible nav nav-link">Banka</div>
+          </Link>
 
           <div className="nav-items">
             <Link to="/dashboard" className="linky">
@@ -208,6 +209,7 @@ export class Dashboard extends Component {
   }
 }
 
+/* istanbul ignore next */
 export const mapStateToProps = state => ({
   auth: state.auth,
   userAccount: state.userAccount.account,

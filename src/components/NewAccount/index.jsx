@@ -7,7 +7,7 @@ import Loader from '../Loader';
 import './NewAccount.css';
 import '../FeedbackModal/FeedbackModal.css';
 
-class NewAccount extends Component {
+export class NewAccount extends Component {
   state = {
     type: 'savings',
     open: false,
@@ -54,9 +54,9 @@ class NewAccount extends Component {
       <div>
         <div id="create">
           <nav className="visible navbar nav-in">
-            <div>
-              <a href="dashboard.html" className="visible nav nav-link">Banka</a>
-            </div>
+            <Link to="/dashboard" className="linky">
+              <div className="visible nav nav-link">Banka</div>
+            </Link>
 
             <div className="nav-items">
               <Link to="/dashboard" className="linky">
@@ -83,7 +83,7 @@ class NewAccount extends Component {
 
               <div className="options">
                 <div className="avi">
-                  <img className="pishicon" src={sessionStorage.getItem('avatar')} alt="" />
+                  <img className="pishicon" src={localStorage.getItem('avatar')} alt="" />
                 </div>
                 <p className="arrow"><i className="caret" /></p>
               </div>
@@ -135,6 +135,7 @@ class NewAccount extends Component {
                 </p>
                 {
                   setTimeout(() => {
+                    /* istanbul ignore next */
                     window.location.href = '/dashboard';
                   }, 500)
                 }
@@ -148,6 +149,7 @@ class NewAccount extends Component {
   }
 }
 
+/* istanbul ignore next */
 export const mapStateToProps = state => ({
   auth: state.auth,
   errors: state.errors.errors,
